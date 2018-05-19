@@ -1,0 +1,4 @@
+<!--pages/addprinter/addprinter.wxml-->
+<text>pages/addprinter/addprinter.wxml</text>
+<button bindtap='addPrinter'>确认添加</button>
+<button bindtap='cancle'>取消</button>

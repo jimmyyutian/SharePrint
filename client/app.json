@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/print/print",
+    "pages/chat/chat",
+    "pages/user/user",
+    "pages/plist/plist",
+    "pages/addprinter/addprinter",
+    "pages/addCgi/addCgi"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0068C4",
+    "navigationBarTitleText": "好享打印",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/print/print",
+        "text": "",
+        "iconPath": "images/print.png",
+        "selectedIconPath": "images/print_focus.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "",
+        "iconPath": "images/chat.png",
+        "selectedIconPath": "images/chat_focus.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_focus.png"
+      },
+      {
+        "pagePath": "pages/addCgi/addCgi",
+        "text": "",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_focus.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

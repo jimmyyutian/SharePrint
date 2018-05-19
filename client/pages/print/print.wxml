@@ -1,0 +1,18 @@
+<!--pages/print/print.wxml-->
+<view class="user flex-wrp">
+    <!--显示用户头像-->
+    <view class="avatar flex-item">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+    <!--显示用户昵称-->
+    <view class="user-info flex-item">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <!-- <text class="edit">查看或编辑个人主页</text> -->
+    </view>
+    <!--显示查看详细-->
+    <view class="print-info flex-item" bindtap='viewPrinters'>
+      <text class="print-info-detail">查看所有附近打印机></text>
+    </view>
+  </view>
+
+<map id="map" longitude="{{cur_pos[0]}}" latitude="{{cur_pos[1]}}" scale="12" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location="true" style="width: 100%; height: {{mapheight}}px;"></map>

@@ -1,0 +1,50 @@
+<!--整个页面的Container-->
+<view class="container">
+
+  <!--显示用户信息-->
+  <view class="user flex-wrp">
+    <!--显示用户头像-->
+    <view class="avatar flex-item">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+    <!--显示用户昵称-->
+    <view class="user-info flex-item">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  </view> 
+
+<!--显示我的项目-->
+  <view class="my">
+    <!--显示我的打印机-->
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/eye.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的打印机</text>
+      </view>
+    </view>
+    <!--显示我收藏的打印机-->
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/star.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我收藏的打印机</text>
+      </view>
+    </view>
+    <!--显示最近使用的打印机-->
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/recent.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>最近使用的打印机</text>
+      </view>
+    </view>
+
+    <!--添加我的打印机-->
+    <button bindtap='addPrinter'>+添加我的打印机</button>
+
+  </view>
+</view>
